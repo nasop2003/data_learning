@@ -1,0 +1,2 @@
+# data_larning
+Pythonを用いたデータ分析についての学習記録
