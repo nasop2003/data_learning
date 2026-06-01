@@ -1,10 +1,11 @@
 import pandas as pd
 from pathlib import Path
+"""東海地方（三重・愛知・岐阜・静岡）ごとの就業者数（男女）の平均を割り出す"""
 
 # データ出典：総務省統計局「労働力調査」（e-Stat）
 # 取得データ：調査年,地域,労働力人口,労働力人口（男）,労働力人口（女）,就業者数,就業者数（男）,就業者数（女）
+# 調査年：1975~2020年度
 
-"""都道府県ごとの就業者数（男女）の平均を割り出す"""
 FILE_PATH = Path(__file__).parent / "FEI_PREF_260525140950.csv"
 
 df = pd.read_csv(FILE_PATH, thousands= ",")
