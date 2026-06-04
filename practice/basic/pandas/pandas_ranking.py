@@ -6,7 +6,7 @@ from pathlib import Path
 # 取得データ：調査年,地域,労働力人口,労働力人口（男）,労働力人口（女）,就業者数,就業者数（男）,就業者数（女）
 # 調査年：1975~2020年度
 
-FILE_PATH = Path(__file__).parent / "FEI_PREF_260525140950.csv"
+FILE_PATH = Path(__file__).parent.parent / "data" / "FEI_PREF_260525140950.csv"
 
 df = pd.read_csv(FILE_PATH, thousands=",")
 
